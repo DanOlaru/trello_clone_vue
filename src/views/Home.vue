@@ -1,18 +1,32 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" class="photo-small" src="../assets/beauty.jpg">
+    <large-container :title="titulary" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import LargeContainer from '../components/LargeContainer.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    'large-container': LargeContainer
+  },
+
+  data () {
+    return {
+      titulary: 'Here we create new cards'
+    }
   }
 }
 </script>
+
+<style scoped>
+  .photo-small {
+     width: 20%;
+  height: auto;
+
+  }
+</style>

@@ -1,0 +1,11 @@
+html *, body *{
+  font-family:'Roboto','sans-serif';
+}
+
+html, body {
+  height:100%;
+}
+
+html::-webkit-scrollbar {
+  visibility: hidden; // for Chromium-based browsers
+}
